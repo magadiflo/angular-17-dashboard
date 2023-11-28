@@ -25,4 +25,25 @@
     }
     }
   </div>
+  <div class="bg-white rounded-none shadow p-10">
+    <ul>
+      @for (framework of frameworks(); track $index; let first = $first, last = $last, even = $even, odd = $odd, count =
+      $count) {
+      <li [class]="{
+        'bg-red-100': even && !first && !last,
+        'bg-green-100': odd && !first && !last,
+        'bg-blue-100': first || last,
+      }">{{ framework }}</li>
+      }
+    </ul>
+  </div>
+  <div class="bg-white rounded-none shadow p-10">
+    <ul>
+      @for (framework of frameworks2(); track $index;) {
+      <li>{{ framework }}</li>
+      } @empty {
+      <li>No hay frameworks</li>
+      }
+    </ul>
+  </div>
 </section>
