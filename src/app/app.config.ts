@@ -2,6 +2,7 @@ import { ApplicationConfig } from '@angular/core';
 import { provideRouter, withViewTransitions } from '@angular/router';
 
 import { APP_ROUTES } from './app.routes';
+import { provideHttpClient } from '@angular/common/http';
 
 /***
  * withViewTransitions(), tan solo agregando esta función, veremos que al cambiar de páginas
@@ -25,5 +26,6 @@ export const appConfig: ApplicationConfig = {
         // },
       }),
     ),
+    provideHttpClient(),
   ]
 };
