@@ -10,3 +10,7 @@ Instalamos [Tailwind](https://tailwindcss.com/docs/guides/angular) en Angular
 $ npm install -D tailwindcss postcss autoprefixer
 $ npx tailwindcss init
 ````
+
+## Utilizaremos la siguiente API para los servicios
+
+https://reqres.in/
