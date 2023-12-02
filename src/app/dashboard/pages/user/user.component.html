@@ -1,4 +1,4 @@
-<app-title title="User" />
+<app-title [title]="titleLabel()" />
 @if (user()) {
 <section>
   <img [srcset]="user()!.avatar" [alt]="user()!.first_name">
